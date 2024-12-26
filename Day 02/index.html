@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Webpage::</title>
+	<style>
+		
+		table,th,td{
+			border: 1px solid black;
+			/*background-color: #99ff99;*/
+			width: 50%;
+
+		}
+		#section{
+			text-align: left;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<!-- Experiment 2 a -->
+	<!-- to create tables we use table tag,table rows tr,table data td,th for table header -->
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Department</th>
+			<th>Id</th>
+		</tr>
+		<tr>
+			<td>Bhavya</td>
+			<td>CSE</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>Jyothi</td>
+			<td>CSE</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>Divya</td>
+			<td>CSE</td>
+			<td>3</td>
+		</tr>
+	</table>
+	<!-- Adding borders to our table using border attribute,To add border we use border property for table,th,td-->
+	<!-- we can also style the border by using background-color and border-radius-->
+	<!-- different types of borders are dotted,dashed,solid,double,groove,ridge,inset,outset,none,hidden-->
+	<h2> Vertical Table Headers</h2>
+	<table id="section">
+		<tr>
+			<th>First Name</th>
+			<td>Tom</td>
+			<td>Jerry</td>		
+		</tr>
+		<tr>
+			<th>Age</th>
+			<td>5</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<th>Favourite</th>
+			<td>Jerry</td>
+			<td>Tom</td>
+	</table>
+	<!-- colspan attribute for spans two columns one header-->
+	<h2>Colspan</h2>
+	<table id="section1">
+		<tr>
+			<th colspan="2">Name</th>
+			<th>Department</th>
+		</tr>
+		<tr>
+			<td>Sam</td>
+			<td>Ram</td>
+			<td>EEE</td>
+		</tr>
+		<tr>
+			<td>Rio</td>
+			<td>Wim</td>
+			<td>ECE</td>
+		</tr>
+	</table>
+	<h2>Rowspan</h2>
+	<table id="section1">
+		<tr>
+			<th>Name</th>
+			<td>Sam</td>
+		</tr>
+		<tr>
+			<th rowspan="2">Phone</td>
+			<td>222-555</td>
+		</tr>
+		<tr>
+			<td>565-888</td>
+		</tr>
+	</table>
+	
+
+
+
+
+
+
+
+
+</body>
+</html>

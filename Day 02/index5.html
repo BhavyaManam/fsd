@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frame Tags</title>
+	<!-- Experiment 2 d-->
+</head>
+<body>
+	<!-- Frame tag HTML <frame> tag is used to divide web browser windows into multiple sections, each capable of loading content independently. This is achieved using a collection of frames within a frameset tag.-->
+	<h2>Frame set and Frame Tag</h2>
+	<frameset rows="20%, 60%, 20%">
+        <frame name="top" 
+               src="./attr1.html" /></frame>
+        <frame name="main" 
+               src="./gradient.html" /></frame>
+        <frame name="bottom" 
+               src="./colLast.html" /></frame>
+        <noframes>
+            <p>The browser you are using does not support frames.</p>
+        </noframes>
+    </frameset>
+    <!-- frame and frametags are depricated for html5 we need to use iframe tags-->
+    <!-- An inline frame is used to embed another document within the current HTML document.-->
+    <iframe src="images/flower.jpg"></iframe>
+    <iframe src="demo_index5.html" height="200" width="300" title="Iframe Example"></iframe>
+
+    <!-- the name of the iframe and the target name should be same-->
+    <iframe src="demo_index5.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+	<p><a href="index4.html" target="iframe_a">Another Html File</a></p>
+
+
+   <!-- The HTML <iframe> tag specifies an inline frame
+The src attribute defines the URL of the page to embed
+Always include a title attribute (for screen readers)
+The height and width attributes specify the size of the iframe
+Use border:none; to remove the border around the iframe-->
+
+
+
+</body>
+</html>

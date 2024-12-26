@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+</head>
+<body>
+	<!--Form Tag defines the form and within this tag, there is action attribute which tells the form where its contents will be sent when it is submitted-->
+	<form action="" method="get" name="enquiry">
+	
+
+<!-- method	get or post	http get method submit form data but is visible in url.
+post includes data in body. more secure as data is not visible to user in url-->
+<!--The most important form element is the input element. The input element is used to get user information. An input element can be of type text, password, checkbox, radio button, submit button and more.-->
+<!-- Label tag is used to write text before the input field-->
+	<label>First Name: <input type="text"></label> 
+	<label>Last Name: <input type="text"></label>
+	<!-- Outside Label-->
+	<label for="lname">Last Name:</label><input type="text" id="lname">
+</form>
+<!-- Value Attribute-->
+<!-- value attribute can also be used inside input or textarea. Usually we ask user to fill values, but if value is fixed, use value attribute-->
+<h2>Value attribute</h2>
+<form action="" method="get" name="normalform">
+	<label for="fname">First Name:</label><input type="text" value="First Name" id="fname">
+
+    <label for="lname">Last Name:</label><input type="text" value="Last Name" id="lname">    	
+</form>
+
+<!-- Input type Password-->
+<!--The input type password is used to write passwords. The password value is written in encrypt form-->
+<h2>Password field</h2>
+<form action="" method="get" name="normalform">
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" >
+</form>
+<!-- Input type email-->
+<h2>Email Field</h2>
+<form action="" method="get" name="normalform">
+	<label for="email">Email ID:</label><input type="email" name="email" id="email">
+</form>
+<!-- Number Field : It accepts only numeric values-->
+<h2>Number Field</h2>
+<form action="" method="get" name="normalform">
+	<label for="age">Age :</label><input type="Number" name="age" id="age">
+</form>
+<!-- Date of Birth Field-->
+<h2>Date of Birth Field</h2>
+<form action="" method="get" name="normalform">
+  <label for="birthday">Birthday:</label><input type="date" id="birthday" name="birthday">
+ </form>
+ <!-- Checkbox Field : User can select many options -->
+ <h2>Checkbox Field</h2> 
+ <form action="" method="get" name="form">
+ 	<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1"> I have a bike</label>
+  	<input type="checkbox" id="vehicle2" name="vehicle2" value="Car"><label for="vehicle2"> I have a car</label>
+  	<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"><label for="vehicle3"> I have a boat</label>
+  </form>
+  <!-- Radio Buttons : Radio buttons let a user select only one of a limited number of choices-->
+  <h2>Radio Buttons</h2>
+  <form action="" method="get" name="form">
+  	<p>Please select your favorite Web language:</p>
+  	<input type="radio" id="html" name="fav_language" value="HTML"><label for="html">HTML</label><br>
+  	<input type="radio" id="css" name="fav_language" value="CSS"><label for="css">CSS</label><br>
+  	<input type="radio" id="javascript" name="fav_language" value="JavaScript"><label for="javascript">JavaScript</label>
+
+  <br>  
+
+  <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30"><label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60"><label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100"><label for="age3">61 - 100</label><br>
+
+</form>
+<!-- Listboxes In general we can say creating a dropdown list using <select> and <option>-->
+<h2>ListBoxes</h2>
+<form action="" method="get" name="form">
+	<label for="cars">Choose a car:</label>
+	<select name="cars" id="cars">
+		<option value="disabled"></option>
+  		<option value="volvo">Volvo</option>
+  		<option value="saab">Saab</option>
+  		<option value="mercedes">Mercedes</option>
+  		<option value="audi">Audi</option>
+	</select>
+</form>
+<!-- Textarea tag The <textarea> tag defines a multi-line text input control,The <textarea> element is often used in a form, to collect user inputs like comments or reviews,it can hold an unlimited number of characters,The size of a text area is specified by the cols and rows-->
+<h2>Textarea Tag</h2>
+<form action="" method="get" name="form">
+	<label for="classreview">Review of fsdclasses</label><textarea id="classreview" name="classreview" rows="4" cols="50">At fsdclasse you will learn how to make a website. They offer free knowledge in all web development technologies.
+	</textarea>
+</form>
+<!-- submit button : submit button which submits all form values to a form-handler,The form-handler is specified in the form's action attribute.-->
+<h2>Submit Button</h2>
+<form action="" method="get" name="form">
+	<label for="fname">First name: </label><input type="text" id="fname" name="fname"><br><br>
+  	<label for="lname">Last name: </label><input type="text" id="lname" name="lname"><br><br>
+  	<input type="submit" value="Submit">
+</form> 
+<!-- Reset Button : defines a reset button which resets all form values to its initial values-->
+<h2>Reset Buttons</h2>
+<form action="" method="get" name="form">
+	<label for="fname">First name: </label><input type="text" id="fname" name="fname"><br><br>
+  	<label for="lname">Last name: </label><input type="text" id="lname" name="lname"><br><br>
+  	<input type="submit" value="Submit">
+  	<input type="reset" value="Reset">
+</form> 
+<!-- File field to upload files-->
+<h2>File Field</h2>
+<form>
+    <label for="pics">Upload pictures : </label> 
+    <input type="file" id="pics" multiple>
+</form>
+<h2>Accept attribute</h2>
+<form>
+	<label>Age: <input type="file" accept=".jpg, .png"> </label>
+</form>
+<h1 style="color: blue;">Normal Form</h1>
+<form action="index2.html" method="get" name="Normalform">
+	<label for="fname">First name: </label><input type="text" id="fname" name="fname"><br><br>
+  	<label for="lname">Last name: </label><input type="text" id="lname" name="lname"><br><br>
+  	<p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30"><label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60"><label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100"><label for="age3">61 - 100</label><br>
+  <label for="cars">Choose a car:</label>
+	<select name="cars" id="cars">
+		<option value="disabled"></option>
+  		<option value="volvo">Volvo</option>
+  		<option value="saab">Saab</option>
+  		<option value="mercedes">Mercedes</option>
+  		<option value="audi">Audi</option>
+	</select>
+	 <label for="pics">Upload pictures : </label> 
+    <input type="file" id="pics" multiple>
+    <input type="submit" value="Submit">
+  	<input type="reset" value="Reset">
+ </form>
+</body>
+</html>

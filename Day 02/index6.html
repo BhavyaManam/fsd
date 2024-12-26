@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Iframes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        iframe {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Frame structure -->
+    <frameset rows="100%,*">
+        <frameset cols="33%,33%,34%">
+            <!-- First iframe for Image -->
+            <iframe src="image.html" width="100%" height="500px"></iframe>
+
+            <!-- Second iframe for Paragraph -->
+            <iframe src="paragraph.html" width="100%" height="500px"></iframe>
+
+            <!-- Third iframe for Hyperlink -->
+            <iframe src="link.html" width="100%" height="500px"></iframe>
+        </frameset>
+
+        <!-- Content for browsers that do not support frames -->
+        <noframes>
+            <body>
+                <h1>This page requires a browser that supports frames.</h1>
+                <p>Unfortunately, your browser doesn't support iframes. Please use an updated browser.</p>
+            </body>
+        </noframes>
+    </frameset>
+
+</body>
+</html>
